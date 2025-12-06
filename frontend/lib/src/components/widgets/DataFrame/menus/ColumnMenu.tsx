@@ -112,7 +112,7 @@ function ColumnMenu({
   return (
     <Popover
       autoFocus
-      aria-label="Dataframe column menu"
+      aria-label="データフレーム列メニュー"
       content={
         <StyledMenuList>
           <StyledColumnHeaderRow>
@@ -126,8 +126,8 @@ function ColumnMenu({
               <StyledColumnNameText>{column.title}</StyledColumnNameText>
               <StyledIconButton
                 onClick={handleCopyNameToClipboard}
-                title="Copy column name"
-                aria-label="Copy column name"
+                title="列名をコピー"
+                aria-label="列名をコピー"
               >
                 <DynamicIcon
                   size="sm"
@@ -149,7 +149,7 @@ function ColumnMenu({
                 role="menuitem"
               >
                 <DynamicIcon size="base" iconValue=":material/arrow_upward:" />
-                Sort ascending
+                昇順で並べ替え
               </StyledMenuListItem>
               <StyledMenuListItem
                 onClick={() => {
@@ -162,7 +162,7 @@ function ColumnMenu({
                   size="base"
                   iconValue=":material/arrow_downward:"
                 />
-                Sort descending
+                降順で並べ替え
               </StyledMenuListItem>
               <StyledMenuDivider />
             </>
@@ -187,7 +187,7 @@ function ColumnMenu({
                     size="base"
                     iconValue=":material/format_list_numbered:"
                   />
-                  Format
+                  フォーマット
                 </div>
 
                 <DynamicIcon
@@ -205,7 +205,7 @@ function ColumnMenu({
               }}
             >
               <DynamicIcon size="base" iconValue=":material/arrows_outward:" />
-              Autosize
+              自動サイズ調整
             </StyledMenuListItem>
           )}
           {isColumnPinned && (
@@ -216,7 +216,7 @@ function ColumnMenu({
               }}
             >
               <DynamicIcon size="base" iconValue=":material/keep_off:" />
-              Unpin column
+              列の固定を解除
             </StyledMenuListItem>
           )}
           {!isColumnPinned && (
@@ -227,7 +227,7 @@ function ColumnMenu({
               }}
             >
               <DynamicIcon size="base" iconValue=":material/keep:" />
-              Pin column
+              列を固定
             </StyledMenuListItem>
           )}
           {onHideColumn && (
@@ -238,7 +238,7 @@ function ColumnMenu({
               }}
             >
               <DynamicIcon size="base" iconValue=":material/visibility_off:" />
-              Hide column
+              列を非表示
             </StyledMenuListItem>
           )}
         </StyledMenuList>
