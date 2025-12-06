@@ -31,52 +31,52 @@ import { StyledMenuList, StyledMenuListItem } from "./styled-components"
 const NUMBER_FORMATS: { format: string; label: string; icon: string }[] = [
   {
     format: "",
-    label: "Automatic",
+    label: "自動",
     icon: ":material/123:",
   },
   {
     format: "localized",
-    label: "Localized",
+    label: "ローカライズ",
     icon: ":material/translate:",
   },
   {
     format: "plain",
-    label: "Plain",
+    label: "プレーン",
     icon: ":material/speed_1_75:",
   },
   {
     format: "compact",
-    label: "Compact",
+    label: "コンパクト",
     icon: ":material/1k:",
   },
   {
     format: "dollar",
-    label: "Dollar",
+    label: "ドル",
     icon: ":material/attach_money:",
   },
   {
     format: "euro",
-    label: "Euro",
+    label: "ユーロ",
     icon: ":material/euro:",
   },
   {
     format: "yen",
-    label: "Yen",
+    label: "円",
     icon: ":material/currency_yen:",
   },
   {
     format: "percent",
-    label: "Percent",
+    label: "パーセント",
     icon: ":material/percent:",
   },
   {
     format: "scientific",
-    label: "Scientific",
+    label: "科学表記",
     icon: ":material/experiment:",
   },
   {
     format: "accounting",
-    label: "Accounting",
+    label: "会計",
     icon: ":material/finance_chip:",
   },
 ]
@@ -95,51 +95,51 @@ const COLUMN_KIND_FORMAT_MAPPING: Record<
   datetime: [
     {
       format: "",
-      label: "Automatic",
+      label: "自動",
       icon: ":material/schedule:",
     },
     {
       format: "localized",
-      label: "Localized",
+      label: "ローカライズ",
       icon: ":material/translate:",
     },
     {
       format: "distance",
-      label: "Distance",
+      label: "距離",
       icon: ":material/search_activity:",
     },
     {
       format: "calendar",
-      label: "Calendar",
+      label: "カレンダー",
       icon: ":material/today:",
     },
   ],
   date: [
     {
       format: "",
-      label: "Automatic",
+      label: "自動",
       icon: ":material/schedule:",
     },
     {
       format: "localized",
-      label: "Localized",
+      label: "ローカライズ",
       icon: ":material/translate:",
     },
     {
       format: "distance",
-      label: "Distance",
+      label: "距離",
       icon: ":material/search_activity:",
     },
   ],
   time: [
     {
       format: "",
-      label: "Automatic",
+      label: "自動",
       icon: ":material/schedule:",
     },
     {
       format: "localized",
-      label: "Localized",
+      label: "ローカライズ",
       icon: ":material/translate:",
     },
   ],

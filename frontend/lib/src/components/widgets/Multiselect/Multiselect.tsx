@@ -111,12 +111,11 @@ const Multiselect: FC<Props> = props => {
 
   const getNoResultsMsg = useMemo(() => {
     if (element.maxSelections === 0) {
-      return "No results"
+      return "検索結果がありません"
     } else if (value.length === element.maxSelections) {
-      const option = element.maxSelections !== 1 ? "options" : "option"
-      return `You can only select up to ${element.maxSelections} ${option}. Remove an option first.`
+      return `最大で ${element.maxSelections} 個まで選択できます。最初にオプションを削除してください。`
     }
-    return "No results"
+    return "検索結果がありません"
   }, [element.maxSelections, value.length])
 
   const generateNewState = useCallback(
